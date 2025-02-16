@@ -15,9 +15,6 @@ It is a **visually appealing, animated HTML page** that showcases my skills, pro
 - **CSS3 (with animations & hover effects)**  
 - **JavaScript (for interactivity & animations)**  
 
-## 📸 Screenshots  
-*(Add images or GIFs of your project here for better presentation!)*  
-
 ## 🚀 How to Run This Project?
 1. Clone this repository:  
    ```sh
