@@ -3,54 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moshika Vetrivel | Front-End Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <title>The Ultimate Futuristic Page | Cognifyz Task 2</title>
 </head>
-<body>
-    <header>
-        <h1 class="fade-in">Hey there, I'm Moshika! 👋</h1>
-        <p>Welcome to my world of Front-End Development!</p>
+<body style="font-family: 'Poppins', sans-serif; text-align: center; background: radial-gradient(circle, #0f172a, #1e293b); color: white; margin: 0; padding: 0; overflow-x: hidden;">
+
+    <!-- Loading Animation -->
+    <div style="position: fixed; width: 100vw; height: 100vh; background: black; z-index: 9999; display: flex; justify-content: center; align-items: center; animation: fadeOut 2s forwards;">
+        <h1 style="font-size: 50px; color: #00eaff; animation: glitch 1s infinite;">Loading...</h1>
+    </div>
+
+    <header style="background: linear-gradient(to right, #000428, #004e92); padding: 30px; box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.9); animation: fadeIn 2s;">
+        <h1 id="typing-header" style="font-size: 45px; color: #00eaff; text-transform: uppercase;"></h1>
+        <p style="font-size: 20px; opacity: 0.8; letter-spacing: 1px;">A next-generation futuristic page with Inline CSS</p>
     </header>
 
-    <section class="about">
-        <h2>About Me</h2>
-        <p>I'm a passionate front-end developer with a love for clean code and stunning web experiences. My goal is to craft beautiful, responsive websites that leave an impact.</p>
-        <img src="https://img.freepik.com/free-vector/cute-girl-hacker-operating-laptop-cartoon-vector-icon-illustration-people-technology-isolated-flat_138676-9487.jpg" alt="Moshika Vetrivel">
-    </section>
-
-    <section class="skills">
-        <h2>My Skill Set 💻</h2>
-        <ul>
-            <li>🌐 HTML5, CSS3, JavaScript</li>
-            <li>🎨 Responsive UI & UX Design</li>
-            <li>⚡ React.js & Front-End Frameworks</li>
-            <li>🔗 API Integration & Fetching Data</li>
-            <li>📱 Mobile-First Development</li>
-        </ul>
-    </section>
-
-    <section class="projects">
-        <h2>My Work 🚀</h2>
-        <div class="project-card">
-            <h3>Portfolio Website</h3>
-            <p>A personal portfolio built using HTML, CSS, and JavaScript.</p>
-        </div>
-        <div class="project-card">
-            <h3>Weather App</h3>
-            <p>A real-time weather application that fetches data from an API.</p>
+    <section style="padding: 40px; animation: slideIn 1.5s;">
+        <h2 style="color: #00c3ff; font-size: 30px; letter-spacing: 2px;">Who Am I?</h2>
+        <p style="font-size: 18px; max-width: 700px; margin: auto;">I create immersive, futuristic UI experiences that blend animation and technology.</p>
+        <div style="display: flex; justify-content: center; margin-top: 20px;">
+            <img src="profile.jpg" alt="Moshika Vetrivel" style="border-radius: 50%; width: 180px; border: 6px solid #00eaff; box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5);">
         </div>
     </section>
 
-    <section class="contact">
-        <h2>Let's Connect! 📩</h2>
-        <p>Email: <a href="mailto:moshikavetrivel@gmail.com">moshikavetrivel@gmail.com</a></p>
-        <p>Phone: <a href="tel:+919003597151">+91 90035 97151</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/moshika" target="_blank">linkedin.com/in/moshika</a></p>
+    <section style="padding: 40px; background: rgba(255, 255, 255, 0.1); border-radius: 15px; margin: 30px auto; max-width: 900px; animation: fadeInUp 2s; border: 3px solid transparent; background-clip: padding-box;">
+        <h2 style="color: #00c3ff; font-size: 28px;">My Skills</h2>
+        <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+            <div style="background: rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 10px; font-size: 20px; font-weight: bold; box-shadow: 0px 5px 15px rgba(0, 255, 255, 0.5); border: 2px solid #00eaff; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">HTML5</div>
+            <div style="background: rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 10px; font-size: 20px; font-weight: bold; box-shadow: 0px 5px 15px rgba(0, 255, 255, 0.5); border: 2px solid #00eaff; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">CSS3</div>
+            <div style="background: rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 10px; font-size: 20px; font-weight: bold; box-shadow: 0px 5px 15px rgba(0, 255, 255, 0.5); border: 2px solid #00eaff; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">JavaScript</div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Moshika Vetrivel. Made with ❤️ for Cognifyz.</p>
+    <footer style="background: linear-gradient(to right, #000428, #004e92); padding: 20px; font-size: 16px;">
+        <p>&copy; 2025 Moshika Vetrivel | Cognifyz Internship</p>
     </footer>
+
+    <!-- Inline CSS Animations -->
+    <style>
+        @keyframes fadeOut {
+            0% { opacity: 1; }
+            100% { opacity: 0; visibility: hidden; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes glitch {
+            0% { text-shadow: 3px 3px 0px #ff0000; }
+            25% { text-shadow: -3px -3px 0px #00ff00; }
+            50% { text-shadow: 3px -3px 0px #0000ff; }
+            75% { text-shadow: -3px 3px 0px #ffff00; }
+            100% { text-shadow: 0px 0px 0px #ffffff; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { transform: translateY(40px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+
+    <!-- Typing Animation -->
+    <script>
+        const text = "Welcome to the Ultimate UI";
+        let i = 0;
+        function typeEffect() {
+            if (i < text.length) {
+                document.getElementById("typing-header").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeEffect, 100);
+            }
+        }
+        window.onload = typeEffect;
+    </script>
+
 </body>
 </html>
