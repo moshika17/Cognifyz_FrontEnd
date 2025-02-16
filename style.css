@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(to right, #1f14af, hsl(241, 96%, 10%));
+    color: rgb(248, 243, 247);
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    animation: slide-in 1s ease-out;
+}
+
+/* Sections */
+.about, .skills, .projects, .contact {
+    padding: 30px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about:hover, .skills:hover, .projects:hover, .contact:hover {
+    transform: scale(1.05);
+}
+
+/* Skills */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    background: #222;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    color: rgb(205, 211, 23);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+li:hover {
+    background: #ffd700;
+    color: black;
+}
+
+/* Projects */
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Contact */
+.contact a {
+    color: rgb(154, 208, 220);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    color: #ffd700;
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* Animations */
+@keyframes slide-in {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
